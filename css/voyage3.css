@@ -1,0 +1,45 @@
+.upred{
+    background-color: #E70000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 400;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-style: italic;
+}
+
+.blue{
+    background-color: #001B9A;
+    margin-top: 4%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 600;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.blue div{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.downred{
+    background-color: #E70000;
+    margin-top: 4%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 400;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.downred div{
+    margin-top: 2.106%;
+    margin-bottom: 2.106%;
+}
