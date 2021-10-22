@@ -1,0 +1,12 @@
+ 
+ body{
+     margin: 0;
+ }
+ 
+ .titre{
+     position: absolute;
+     top: 10%;
+     left: 10%;
+     color: whitesmoke;
+     text-shadow: 0.1em 0.1em 0.2em black;
+ }
