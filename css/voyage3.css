@@ -1,6 +1,11 @@
 body{
     overflow-x: hidden;
 }
+main{
+    background: url(../image/thailande_background.jpg), url(../image/Bangkok_background.jpg), url(../image/background_ville.jpg), url(../image/eau_background.jpg) ;
+    padding-bottom: 80vh;
+    animation: slide 40s infinite;
+}
 
 .mainhead{
     background: url(../image/thailande_background.jpg), url(../image/Bangkok_background.jpg), url(../image/background_ville.jpg), url(../image/eau_background.jpg) ;
@@ -102,3 +107,7 @@ span::before{
 .foodcolumn{
     display: flex;
 }
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
