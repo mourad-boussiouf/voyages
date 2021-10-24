@@ -1,0 +1,186 @@
+body{
+    overflow-x: hidden;
+    margin-top: 0%;
+    
+}
+
+.mainhead{
+    margin-right: 4%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#titlehead{
+    position: absolute;
+    top: 10%;
+    font-size: 3vh;
+    letter-spacing: 3px;
+}
+#bigtitlehead{
+    position: absolute;
+    top: 20%;
+    font-size: 4vh;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.bigtexthead{
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 5vh;
+    padding-top: 5%;
+}
+
+
+
+span::before{
+    color: white;
+    content: "";
+    animation: textslide infinite 8s;
+}
+@keyframes textslide{
+    0%{
+        content: "PAYSAGE";
+    }
+    20%{
+        content: "PAYSAGE";
+    }
+    40%{
+        content: "TRADITION";
+    }
+    60%{
+        content: "HISTOIRE";
+    }
+    80%{
+        content: "FAUNE";
+    }
+    100%{
+        content: "GASTRONOMIE";
+    }
+}
+
+.foodcontainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+}
+
+.food{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 35vh;
+    padding-right: 35vh;
+    padding-bottom: 3.5%;
+}
+
+.food img{
+    border-radius: 35px;
+    margin-right: 30%;
+}
+
+.food p{
+    padding-top: 4.5%;
+    font-style: italic;
+    font-size: 2vh;
+}
+
+.foodreverse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 35vh;
+    padding-right: 35vh;
+    padding-bottom: 3.5%;
+}
+
+.foodreverse img{
+    border-radius: 35px;
+    margin-left: 30%;
+}
+
+.foodreverse p{
+    padding-top: 4.5%;
+    font-style: italic;
+    font-size: 2vh;
+}
+
+.mainheadtest{
+    background: url(../image/thailande_background.jpg), url(../image/Bangkok_background.jpg), url(../image/background_ville.jpg), url(../image/eau_background.jpg) ;
+    padding-bottom: 50vh;
+    animation: slide 40s infinite;
+    margin-top: 3%;
+    margin-right: 4%;
+    margin-left: 4%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes slide{
+
+    25%{
+        background: url(../image/Bangkok_background.jpg);
+    }
+
+    50%{
+        background: url(../image/background_ville.jpg);
+    }
+
+    75%{
+        background: url(../image/eau_background.jpg);
+    }
+
+    100%{
+        background: url(../image/thailande_background.jpg);
+    }
+
+}
+/* Pas de Js donc impossibilité de l'activer au scroll */
+.fadeleft{
+    animation: fadeleft 6s both;
+    -webkit-animation: fadeleft 6s both;
+}
+
+.faderight{
+    -webkit-animation: faderight 6s both;
+    animation: faderight 6s both;
+}
+
+@keyframes fadeleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX( 0px);
+    }
+
+}
+
+@keyframes faderight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX( 0px);
+    }
+
+}
