@@ -1,8 +1,7 @@
  
  body{
      overflow-x: hidden;
-     background-color: #FFFAE4;
-     
+     background-color: #fff6d0;
  }
  
  #titre{
@@ -73,6 +72,7 @@ margin-right: 0;
  width: 50%;
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  font-size: 20px;
+ margin-left: 30px;
 }
 .baobab{
     width: 80px;
@@ -89,4 +89,50 @@ margin-right: 0;
 }
 #difflieux{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logovol{
+    height: 50px;
+    width: 200px;
+}
+td{
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFE1A2;
+    border-radius: 5px;
+  }
+  
+  th{
+    background-color: #FFE1A2;
+    border-radius: 5px;
+  }
+  table{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100px;
+  width: 500px;
+  border-collapse: separate;
+  margin:auto
+  }
+.gallimg{
+    --gap:20px;
+    --num-cols: 4;
+    --row-height: 250px;
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.gallimg > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    box-shadow: 2px 2px 2px 2px #E30000;
+}
+.gallimg > img:hover{
+    transform: scale(1.05);
+    box-shadow: none;
 }
