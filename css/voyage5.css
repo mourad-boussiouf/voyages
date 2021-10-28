@@ -4,7 +4,7 @@ padding: 0;
 margin: 0;
 }
 
-
+/* bannière corée du sud principale */
 .bannersouthkorea {
 display: flex;
 box-shadow: 1px 4.5px 3px rgba(196, 109, 109, 0.411);
@@ -68,6 +68,7 @@ display: none;
 
 .imagesouthkoreaflagmobile {
 display: block;
+margin-left: 7%;
 }
 
 .bannertitlekorea{
@@ -81,10 +82,11 @@ margin-left: 1% !important;
 #stickholding {
 display: none;
 }
-
 }
 
+/* bannière corée du sud principale */
 
+/* images de Fond transitives et silhouette ville */
 #cityshapekorea {
 display: flex;   
 justify-content: center;
@@ -129,10 +131,16 @@ animation: slide 45s infinite;
     }
 }
 
+/* images de Fond transitives et silhouette ville */
+
+
+/* Partie histoire de la corée et grid image histoire */
 .historykoreatext h2 {
 display: flex;
 justify-content: center;
 font-weight: 500;
+padding-bottom: 48px;
+padding-top: 5px;
 }
 
 .historykoreacontainer{
@@ -167,22 +175,22 @@ gap: var(--gap);
 
 margin-left: 10%;
 margin-right: 9%;
-margin-top: 3%;
+margin-top: 2%;
 }
 
 .galleryhistorykorea > img {
   width: 100%;  
   height: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.123);
   transition: transform 0.4s;
 }
+  
 
 .galleryhistorykorea > img:hover {
     transform: scale(1.03);
     box-shadow: none;
 }
-
 
 .galleryhistorykorea-col-2{
 grid-column: span 2;
@@ -191,19 +199,178 @@ grid-column: span 2;
 .galleryhistorykorea-row-2{
     grid-row: span 2;
 }
-@media screen and (max-width: 1024px )  {
+
+@media screen and (max-width: 1200px )  {
 .galleryhistorykorea {
 
     --num-cols: 2;
     --row-height: 200px;
 }
+.activitykoreacontainer {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.activitykoreatext1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    margin-right: 14%;
+}
+
+}
+
+/* Partie histoire de la Corée et grid image histoire */
+
+.activitykoreacontainer{
+padding-top: 3% ;
+background-color: rgb(255, 255, 255);
+display: flex;
+align-items: center;
+padding-top: 2%;
+
+
+
+}
+
+#activitytitle h2{
+display: flex;
+justify-content: center;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 3rem;
+padding-top: 90px;
+padding-bottom: 10px;
+text-shadow: 0.5px 0.5px 3px rgb(97, 97, 97);
+font-weight: 500;
+
 }
 
 
+.activitykoreatext1 {
+    background-color: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    padding-left: 5px;
+    margin-left: 18%;
+    margin-right: 10%;
+    padding-top: 0;
+    padding-right: 42px;
+    text-shadow: 0.5px 0.5px 3px rgb(97, 97, 97);
+    width: 33%;
+    
+    }
 
 
 
+.slide {
+float: left;
+}
 
+.slides {
+width: calc(280px * 3);
+animation: glisse 10s infinite;
+}
+
+.slider {
+box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.582);
+border-radius: 16px;
+width: 280px;
+overflow: hidden;
+}
+
+
+@keyframes glisse {
+0% {transform: translateX(0);
+}
+10% {transform: translateX(0);
+}
+33% {transform: translateX(-280px);
+}
+43% {transform: translateX(-280px);
+}
+66% {transform: translateX(-560px);
+}
+76% {transform: translateX(-560px);
+}
+100% {transform: translateX(0);
+}
+
+}
+
+.activitykoreacontainer2 {
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding-bottom: 50px;
+align-items: center;
+}
+
+.activitykoreatext2 {
+
+font-size: 24px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+text-shadow: 0.5px 0.5px 3px rgb(97, 97, 97);
+margin-left: 10%;
+margin-right: -4%;
+padding-right: 0.5%;
+padding-left: 4.2%;
+width: 32%;
+padding-top: 9px;
+padding-bottom: 20px;
+}
+
+
+.slide2 {
+    float: left;
+    }
+    
+    .slides2 {
+    width: calc(280px * 3);
+    animation: glisse2 12s infinite;
+    }
+    
+    .slider2 {
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.582);
+    border-radius: 16px;
+    width: 280px;
+    overflow: hidden;
+    }
+
+    @keyframes glisse2
+     {
+        0% {transform: translateX(0);
+        }
+        10% {transform: translateX(0);
+        }
+        33% {transform: translateX(-280px);
+        }
+        43% {transform: translateX(-280px);
+        }
+        66% {transform: translateX(-560px);
+        }
+        76% {transform: translateX(-560px);
+        }
+        100% {transform: translateX(0);
+        }
+        
+        }
+    
+
+@media screen and (max-width: 1200px )  {
+.activitykoreacontainer2 {
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+justify-content: center;
+}
+.activitykoreatext2{
+margin-right: 11%;
+padding-top: 20px;
+padding-right: 1%
+}
+}
 
 
 
