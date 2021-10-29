@@ -40,7 +40,7 @@ margin-right: 0;
      width: calc(600px * 3);
      animation: glisse 15s infinite;
  }
- @keyframes glisse{
+ @keyframes glisse{ 
         0%{
          transform: translateX(0);
     }
