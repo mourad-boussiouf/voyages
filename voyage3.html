@@ -4,31 +4,76 @@
     <meta charset="UTF-8">
     <title>Thaïlande</title>
     <link rel="stylesheet" href="css/voyage3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
 </head>
 <body>
     <!-- Début du Header -->
-    <header></header>
+    <header>
+        <div class="menupays">
+            <button class="buttonpays">Pays</button>
+            <div class="buttonpays-content">
+            <span>Afrique</span>
+            <a href="voyage1.html">Sénégal</a>
+            <span>Asie</span>
+            <a href="voyage3.html">Thaïland</a>
+            <a href="voyage2.html">Corée du sud</a>
+            </div>
+         </div>
+         <div class="menuperson">
+            <button class="buttonperson">Équipe</button>
+            <div class="buttonperson-content">
+            <a href="index.html">Ibrahim</a>
+            <a href="index.html">Andrea</a>
+            <a href="index.html">Mourad</a>
+            </div>
+         </div>
+    
+    </header>
     <!-- Debut du Main -->
     <main>
-        <div class="mainhead">
-            <video type="video/mp4" autoplay muted loop width="1920px">
+        <div class="slidecontainer">
+        <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+        <i class=""></i>
+    </label>
+    <div class="sidebar">
+        <div class="header-sidebar">
+            <p>Thailande</p>
+        </div>
+        <ul>
+            <li><a href="#gastronomielink">Gastronomie</a></li>
+            <li><a href="#lieuxlink">Lieux</a></li>
+            <li><a href="#tarifslink">Tarifs</a></li>
+            <li><a href="#demandelink">Demande</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+        <div class="mainhead" id="homelink">
+            <video type="video/mp4" autoplay muted loop width="auto">
                 <source src="video/Background.mp4">
             </video>
             <div id="titlehead"><p>BIENVENUE EN</p></div>
             <div id="bigtitlehead"><p>THAÏLANDE</p></div>
         </div>
         <div class="bigtexthead">
-            <p>UN PAYS RICHE EN <span></span></p>
+            <span></span>
         </div>
+        <hr class="hrm">
+        <p class="sectiontitle" id="gastronomielink">Gastronomie</p>
+        <hr width="5%">
             <div class="foodcontainer">
                 <div class="food">
                     <img class="fadeleft" src="image/Item.jpg" alt="">
-                    <p>Le buddha bowl est LE plat préféré des adorateurs de Bouddha, il confère un bonus de spiritualité de + 17.
+                    <p class="test">Le buddha bowl est LE plat préféré des adorateurs de Bouddha, il confère un bonus de spiritualité de + 17.
                     Aussi addictif que l'héroine ce plat ferait devenir le plus sataniste d'entre nous en un petit ange adorateur de Dieu.
                     </p>
                 </div>
                 <div class="foodreverse">
-                    <p>Le crabe thailandais où "Le roi Krabby" fut longtemps interdit par la region de Kanto.
+                    <p class="test">Le crabe thailandais où "Le roi Krabby" fut longtemps interdit par la region de Kanto.
                         <br>Depuis la seconde moitié du 20 ème siécle, il devient un met de choix pour les familles de la classe populaire malgré son interdiction.
                         <br>Quasi gratuit car en abondance sur les plages dut a son interdiction, l'interdiction de consommation fut levé en 1982.
                         </p>
@@ -36,16 +81,213 @@
                 </div>
                 <div class="food">
                     <img class="fadeleft" src="image/Item2.jpg" alt="">
-                    <p>Le poulet émincé au basilic est un plat typiquement Thailandais, préparation rapide est très peu honéreuse.
+                    <p class="test">Le poulet émincé au basilic est un plat typiquement Thailandais, préparation rapide est très peu honéreuse.
                     Il est un plat courant de la cuisine Thailandaise.
                     <br> A la fois épicé, healthy et pleins de nutriments, il permet de se ressourcer après une dure journée de travail </p>
                 </div>
             </div>
-            <div class="mainheadtest">
-                <p>coucou</p>
+            <hr class="hr-">
+            <p class="sectiontitle" id="lieuxlink">Lieux</p>
+        <hr  width="3%">
+            <div class="viewscontainer">
+                <div class="boxcontainer">
+                    <div class="box">
+                        <img src="image/boximage1.jpg" height="380px" alt="">
+                        <div class="boxfooter">
+                            <a href="https://www.royalgrandpalace.th/en/home" target="_blank"><p class="h1-box">The Grand Palace</p></a>
+                            <p class="p-box">Palais royale de Bangkok construit en 1782,<br> il est utilisé actuellement pour les ceremonies officiels.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="image/boximage2.jpg" height="380px" alt="">
+                        <div class="boxfooter">
+                            <a href="https://www.watarun1.com/en" target="_blank"><p class="h1-box">Wat Arun</p></a>
+                            <p class="p-box">Le Wat Arun est un temple bouddhiste de Bangkok<br>Le temple doit son nom au dieu Hindou Aruna, symbole de l'aurore.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="boxcontainer">
+                    <div class="box">
+                        <img src="image/boximage2.jpg" height="380px" alt="">
+                        <div class="boxfooter">
+                            <a href="http://www.railay.com/railay/intro/intro.shtml" target="_blank"><p class="h1-box">The Grand Palace</p></a>
+                            <p class="p-box">Railay est une petite péninsule. <br>Située entre les villes thaïlandaises de Krabi et Ao Nang.
+                                <br>Elle est accessible uniquement par bateau<br> du fait des hautes falaises calcaires qui l'isolent du continent.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="image/boximage4.jpg" height="380px" alt="">
+                        <div class="boxfooter">
+                            <a href="https://www.chatuchakmarket.org/" target="_blank"><p class="h1-box">Marché de Chatuchak</p></a>
+                            <p class="p-box">Le marché de Chatuchak est un important marché du district de Chatuchak,<br> à Bangkok en Thaïlande.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <hr class="hr-">
+                <div class="pricecontainer">
+                    <p class="formtitle" id="tarifslink">Tarifs</p>
+                    <hr width="2.5%">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Destination</td>
+                                <td>Compagnie</td>
+                                <td>Aller-retour</td>
+                                <td>Prix</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bangkok</td>
+                                <td>Airfrance</td>
+                                <td>Oui</td>
+                                <td>1200€</td>
+                            </tr>
+                            <tr>
+                                <td>Bangkok</td>
+                                <td>EasyCrash</td>
+                                <td>boom</td>
+                                <td>7€</td>
+                            </tr>
+                            <tr>
+                                <td>Phuket</td>
+                                <td>SpaceX</td>
+                                <td>Oui</td>
+                                <td>170000€</td>
+                            </tr>
+                            <tr>
+                                <td>Phuket</td>
+                                <td>Bermude Airlines</td>
+                                <td>?</td>
+                                <td>∞</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
+            <hr class="hr-">
+            <div class="travel">
+                <p class="traveltitle">Temps de visite</p>
+                <hr width="6%">
+                <div class="travelcontainer">
+                    <div class="travelcontainerrow">
+                        <img src="image/Bangkok80.jpg" alt="" height="80px">
+                            <div class="travelcontainercolumn">
+                            <p class="travelh1">Bangkok</p>
+                            <p class="travelp">1 semaine de visite</p>
+                            </div>
+                    </div>
+                    <div class="travelcontainerrow">
+                        <img src="image/Chonburi80.png" alt="" height="80px">
+                            <div class="travelcontainercolumn">
+                            <p class="travelh1">Chonburi</p>
+                            <p class="travelp">3 jours de visite</p>
+                            </div>
+                    </div>
+                    <div class="travelcontainerrow">
+                        <img src="image/Nonthaburi80.jpg" alt="" height="80px">
+                            <div class="travelcontainercolumn">
+                            <p class="travelh1">Nonthaburi</p>
+                            <p class="travelp">4 jours de visite</p>
+                            </div>
+                    </div>
+                    <div class="travelcontainerrow">
+                        <img src="image/PHUKET80.jpg" alt="" height="80px">
+                            <div class="travelcontainercolumn">
+                            <p class="travelh1">Phuket</p>
+                            <p class="travelp">10 jours de visite</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="travelcontainer">
+                    <div class="travelcontainerrow">
+                        <img src="image/Chiang80.jpg" alt="" height="80px">
+                            <div class="travelcontainercolumn">
+                            <p class="travelh1">Chiang Mai</p>
+                            <p class="travelp">1 semaine de visite</p>
+                            </div>
+                    </div>
+                    <div class="travelcontainerrow">
+                        <img src="image/Nakhon80.jpg" alt="" height="80px">
+                            <div class="travelcontainercolumn">
+                            <p class="travelh1">Nakhon</p>
+                            <p class="travelp">5 jours de visite</p>
+                            </div>
+                    </div>
+                    <div class="travelcontainerrow">
+                        <img src="image/Khon80.jpg" alt="" height="80px">
+                            <div class="travelcontainercolumn">
+                            <p class="travelh1">Khon Kaen</p>
+                            <p class="travelp">10 jours de visite</p>
+                            </div>
+                    </div>
+                    <div class="travelcontainerrow">
+                        <img src="image/Pakkret80.jpg" alt="" height="80px">
+                            <div class="travelcontainercolumn">
+                            <p class="travelh1">Pak Kret</p>
+                            <p class="travelp">6 jours de visite</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-">
+            <div class="formcontainer">
+                <p class="formtitle" id="demandelink">Demande</p>
+                <hr width="4%">
+                <div class="formulaire">
+                    <form action="">
+                        <div><p class="formphead">Votre demande</p></div>
+                        <div class="formehead"><label for="emailform"></label>
+                        <input type="email" id="email" class="email" required placeholder="email"></div>
+                        <div>
+                        <textarea id="text"
+                        rows="15" cols="66" maxlength="200" required></textarea></div>
+                    <div class="cbutton"><input class="buttonform" type="submit"></div>
+                    </form>
+                </div>
+            </div>
+            <a href="#homelink"><i class="fas fa-arrow-up"></i></a>
     </main>
     <!-- Debut du Footer -->
-    <footer></footer>
+    <footer>
+        <div>
+            <p class="footerh1">Nos Pays !</p>
+            <div class="fdrapeau">
+                <img src="image/coreedusuddrapeau.jpg" alt="">
+            <a href="voyage2.html"><p>Corée du Sud</p></a>
+            </div>
+            <div class="fdrapeau">
+                <img src="image/senegaledrapeau.jpg" alt="">
+            <a href="voyage1.html"><p>Senegale</p></a>
+            </div>
+            <div class="fdrapeau">
+                <img src="image/thailandedrapeau.png" alt="">
+                <a href="voyage3.html"><p>Thailande</p></a>
+            </div>
+        </div>
+        <div>
+            <p class="footerh1">Suivez nous !</p>
+            <div class="rs">
+                <img src="image/facebook.svg" alt="" height="64px">
+                <a href=""><p>Facebook</p></a>
+            </div>
+            <div class="rs">
+                <img src="image/Instagram.png" alt="" height="64px">
+                <a href=""><p>Instagram</p></a>
+            </div>
+            <div class="rs">
+                <img src="image/twitter.svg" alt="" height="64px" width="64px">
+                <a href=""><p>Twitter</p></a>
+            </div>
+        </div>
+        <div>
+            <p class="footerh1">Github</p>
+            <a href="https://github.com/mourad-boussiouf/voyages" target="_blank"><p>Mourad</p></a>
+            <a href="https://github.com/mourad-boussiouf/voyages" target="_blank"><p>Ibrahim</p></a>
+            <a href="https://github.com/mourad-boussiouf/voyages" target="_blank"><p>Andrea</p></a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,284 @@
+ 
+ body{
+     overflow-x: hidden;
+     background-color: #fff6d0;
+ }
+ 
+ #titre{
+     position: absolute;
+     top: 10%;
+     color: whitesmoke;
+     text-shadow: 0.1em 0.1em 0.2em black;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 30px;
+     text-align: center;
+ }
+ #bloc{
+margin-right: 0;
+ }
+ video{
+     width: 100%;
+ }
+ h1{
+     text-align: center;
+ }
+ .imgsl{
+     height: 300px;
+     width: 600px;
+ }
+ .slider{
+     width: 43.5%;
+     overflow: hidden;
+     margin-left: 150px;
+     border-radius: 10px;
+ }
+ .slide{
+     float: left;
+     
+ }
+ .slides{
+     width: calc(600px * 3);
+     animation: glisse 15s infinite;
+ }
+ @keyframes glisse{ 
+        0%{
+         transform: translateX(0);
+    }
+        10%{
+        transform: translateX(0);
+    }
+        33%{
+        transform: translateX(-600px);
+    } 
+        43%{
+        transform: translateX(-600px);
+    }
+        66%{
+        transform: translateX(-1200px);
+    } 
+        76%{
+        transform: translateX(-1200px);
+    }
+        100%{
+        transform: translateX(0);
+    }
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.txt{
+ width: 50%;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: 20px;
+ margin-left: 30px;
+}
+.baobab{
+    width: 80px;
+    height: 80px;
+}
+.vert{
+    color: #249B00;
+}
+.jaune{
+    color: #FFEA58;
+}
+.rouge{
+    color: #E30000;
+}
+#difflieux{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logovol{
+    height: 50px;
+    width: 200px;
+}
+td{
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFE1A2;
+    border-radius: 5px;
+  }
+  
+  th{
+    background-color: #FFE1A2;
+    border-radius: 5px;
+  }
+  table{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100px;
+  width: 500px;
+  border-collapse: separate;
+  margin:auto
+  }
+.gallimg{
+    --gap:20px;
+    --num-cols: 4;
+    --row-height: 250px;
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.gallimg > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    box-shadow: 2px 2px 2px 2px #E30000;
+}
+.gallimg > img:hover{
+    transform: scale(1.05);
+    box-shadow: none;
+}
+footer{
+    height: 300px;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.438) 4px 4px 0px 0px;
+    background-color: #FE411C;
+}
+
+.rs{
+    display: flex;
+}
+
+.rs img{
+    height: 48px;
+    width: 48px;
+    position: relative;
+    left: -10px;
+}
+
+.footerh1{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.fdrapeau{
+    display: flex;
+}
+
+.fdrapeau img{
+    position: relative;
+    left: -10px;
+    height: 42px;
+    width: 64px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: rgb(110, 110, 110);
+}
+
+/* Style du Header site voyages Ibrahim, Andrea et Mourad */
+
+.buttonpays {
+    background-color: #464646;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+  }
+  .menupays {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    margin-left: 40%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+ 
+  }
+
+  .buttonpays-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 200px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .buttonpays-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  .buttonpays-content a:hover {background-color: #f1f1f1}
+  
+  .menupays:hover .buttonpays-content {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .menupays:hover .buttonpays {
+    background-color: #353535;
+  }
+
+  .buttonperson {
+    background-color: #464646;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+  }
+  .menuperson {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .buttonperson-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 200px;
+    z-index: 1;
+    font-size: 15px;
+  }
+
+  .buttonperson-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .buttonperson-content a:hover {background-color: #f1f1f1}
+  
+  .menuperson:hover .buttonperson-content {
+    display: block;
+  }
+  
+  .menuperson:hover .buttonperson {
+    background-color: #353535;
+  }
+
+  header{
+    margin-left: -5%;
+    }
